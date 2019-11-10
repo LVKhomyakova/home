@@ -1,14 +1,21 @@
 .left{
     float: left;
-    color: red;
 }
 .right{
     float: right;
-    color: green;
 }
-.none{
-    float: none;
+.move{
+    width: 20px;
+    margin-left: -20px;
+}
+.clear{
+    clear: both;
+}
+div{
+    width: 10px;
+    height: 20px;
 }
 body{
-    width: 24px;
+    margin: 20px;
+    width: 30px;
 }
