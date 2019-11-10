@@ -1,0 +1,44 @@
+body{
+    background: rgb(0, 80, 180);
+}
+.outline{
+    outline: 2px solid black;
+    margin: 40px 0px 0px 40px;
+}
+.column-left{
+    float: left;
+    width: 100px;
+}
+.column-right{
+    margin-left: 140px;
+    width: 200px;
+}
+.transp{
+    margin: 0px auto;
+    width: 420px;
+    height: 420px;
+}
+.red{
+    float:left;
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+.green{
+    float:left;
+    background: green;
+    width: 200px;
+    height: 200px;
+}
+.blue{
+    float:left;
+    background: blue;
+    width: 100px;
+    height: 200px;
+}
+.yellow{
+    float:left;
+    background: yellow;
+    width: 200px;
+    height: 100px;
+}

@@ -1,0 +1,14 @@
+.left{
+    float: left;
+    color: red;
+}
+.right{
+    float: right;
+    color: green;
+}
+.none{
+    float: none;
+}
+body{
+    width: 24px;
+}

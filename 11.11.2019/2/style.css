@@ -1,0 +1,37 @@
+body{
+    width: 610px;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin: 30px;
+}
+.code
+{
+    font-family: Consolas,monospace;
+    font-size: .95em;
+    border-radius: 5px;
+    background: rgb(230, 230, 230);
+    padding: 5px;
+}
+.comment{
+    color: grey;
+    font-size: .95em;
+    font-style: italic;
+}
+.string{
+    color: red;
+}
+.attribute_name{
+    color: rgb(64, 155, 230);
+}
+.tag_name{
+    color: blue;
+}
+.bold{
+    font-weight: bold;
+}
+.blue
+{
+    color: blue;
+}

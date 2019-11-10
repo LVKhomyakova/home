@@ -1,0 +1,126 @@
+body{
+    margin: 20px;
+}
+hr{
+    margin: 20px 0px 0px 0px;
+    width: 950px;
+}
+header{
+    float: left;
+    width: 970px;
+    height: 130px;
+}
+.block-header{
+    margin: 20px 20px 0px 0px;
+    background: grey;
+}
+main{
+    float: left;
+    width: 970px;
+}
+p{
+    margin: 5px;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 3px 3px 3px black;
+}
+.sidebar{
+    float: left;
+    width: 200px;
+}
+.block-sidebar{
+    margin: 20px 20px 0px 0px;
+    background: grey;
+}
+.content{
+    float: left;
+    width: 770px;
+}
+.block-content{
+    margin: 20px 20px 0px 0px;
+    background: lightgrey;
+}
+article{
+    float: left;
+    width: 770px;
+}
+footer{
+    float: left;
+    width: 970px;
+    height: 200px;
+}
+.block-footer{
+    margin: 20px 20px 0px 0px;
+    background: grey;
+}
+
+.one{
+    float: left;
+    width: 120px;
+    height: 110px;
+}
+.two{
+    float: left;
+    margin: 20px 0px 0px 15px;
+    width: 250px;
+    height: 110px;
+}
+.three{
+    float: right;
+    width: 510px;
+    height: 110px;
+}
+.four{
+    float: left;
+    margin-bottom: 290px;
+    width: 180px;
+    height: 330px;
+}
+.five{
+    float: left;
+    width: 750px;
+    height: 210px;
+}
+.six{
+    float: left;
+    margin-right: 24px;
+    width: 130px;
+    height: 150px;
+}
+.seven{
+    float: left;
+    width: 180px;
+    height: 130px;
+}
+.eight{
+    float: left;
+    width: 350px;
+    height: 200px;
+}
+.nine{
+    float: right;
+    width: 350px;
+    height: 200px;
+}
+.ten{
+    float: left;
+    width: 300px;
+    height: 180px;
+}
+.eleven{
+    float: left;
+    margin: 20px 0px 0px 5px;
+    width: 300px;
+    height: 180px;
+}
+.twelve{
+    float: right;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 75px;
+}
+.thirteen{
+    float: right;
+    width: 300px;
+    height: 75px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h3>Creating a chart</h3>
+        <p>To create a chart, we need to instantiate the <span class="code">Chart</span> class. To do this, we need
+        to pass in the 2d context of where we want to draw  the chart. Here's an example. </p>
+        <p class="code">
+            <span class="tag_name">&lt;canvas</span>
+            <span class="attribute_name">id=</span><span class="string">"MyChart"</span>
+            <span class="attribute_name">width=</span><span class="string">"400"</span>
+            <span class="attribute_name">height=</span><span class="string">"400"</span><span class="tag_name">&gt;&lt;/canvas&gt;</span>
+        </p>
+        <p class="code">
+            <span class="comment">//Get the context of the canvas element we want to select</span>
+            <br><span class="bold">var</span> ctx = <span class="blue">document</span>.getElementById(<span class="string">"myChart"</span>).getContext(<span class="string">"2d"</span>);
+            <br><span class="bold">var</span> myNewChart = <span class="bold">new</span> Chart(ctx).PolarArea(data);
+        </p>
+        <p>We can also get the context of our canvas with jQuery. To do this, we need to
+        get the DOM node out of the jQuery collection, and call the <span class="code">getContext("2d")</span> method on that.
+        <p class="code">
+            <span class="comment">//Get context with jQuery - using jQuery's. get() method.</span>
+            <br><span class="bold">var</span> ctx = $(<span class="string">"myChart"</span>).get(<span class="blue">0</span>).getContext(<span class="string">"2d"</span>);
+            <br><span class="comment">//This will get the first returned node in the jQuery collection</span>
+            <br><span class="bold">var</span> myNewChart = <span class="bold">new</span> Chart(ctx);</p>
+        </p>
+    </main>
+</body>
+</html>

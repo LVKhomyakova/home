@@ -1,0 +1,40 @@
+.wrap{
+    width: 1000px;
+    height: 48px;
+    margin: 0px auto;
+    border: 1px solid transparent;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(80, 160, 200);
+    margin: 5px 0px;
+}
+.underline{
+    height: 4px;
+    background: gray;
+}
+.page{
+    float: left;
+    width: 35px;
+    height: 45px;
+}
+.current .underline{
+    background: orangered;
+}
+.current p{
+    color: white;
+    background: orangered;
+    text-decoration: none;
+}
+
+.page:hover .underline{
+    background: orangered;
+}
+.page:hover p{
+    color: white;
+    background: orangered;
+    text-decoration: none;
+}
