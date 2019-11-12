@@ -1,0 +1,24 @@
+    body{
+        margin: 0px;
+    }
+    .odd{
+        float: left;
+        width: 12.5vmin;
+        height: 100vmin;
+        background: linear-gradient(to bottom,
+        black 0vmin, black 12.5vmin, white 12.5vmin, white 25vmin,
+        black 25vmin, black 37.5vmin, white 37.5vmin, white 50vmin,
+        black 50vmin, black 62.5vmin, white 62.5vmin, white 75vmin,
+        black 75vmin, black 87.5vmin, white 87.5vmin, white 100vmin );
+
+    }
+    .even{
+        float: left;
+        width: 12.5vmin;
+        height: 100vmin;
+        background: linear-gradient(to top,
+        black 0vmin, black 12.5vmin, white 12.5vmin, white 25vmin,
+        black 25vmin, black 37.5vmin, white 37.5vmin, white 50vmin,
+        black 50vmin, black 62.5vmin, white 62.5vmin, white 75vmin,
+        black 75vmin, black 87.5vmin, white 87.5vmin, white 100vmin );
+    }
