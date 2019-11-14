@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тройка, Семерка, Туз</title>
+    <style>
+        body{ 
+            margin:0; 
+            width: 100vw;
+        } 
+        .card { 
+            float: left; 
+            width: calc(100vw / 3); 
+            padding-top: 50%;
+            background-size: 410% 1500%;
+            background-image: url("images/cards2.png");
+            background-repeat: no-repeat;
+        } 
+        .three{
+            background-position-y: 7.9%;  
+            background-position-x: 33%;
+        }
+        .seven{
+            background-position-y: 38.6%;
+            background-position-x: 66.5%;
+        }
+        .ace{
+            background-position-y: 92.2%;
+            background-position-x: 99.5%;
+        }
+        </style>
+</head>
+<body>
+    <div class="card three"></div>
+    <div class="card seven"></div>
+    <div class="card ace"></div>
+</body>
+</html>

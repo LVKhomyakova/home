@@ -1,6 +1,8 @@
     body{
         margin: 0px;
-    }
+        width: 100vmin;
+        Height: 100vmin;
+   }
     .odd{
         float: left;
         width: 12.5vmin;
