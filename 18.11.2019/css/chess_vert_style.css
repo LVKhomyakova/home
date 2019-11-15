@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 .chessboard{
-    width: 100vmin;
+    width: 100vw;
     height: 100vmin;
 } 
 .chessboard>div{ 
@@ -85,7 +85,7 @@ div+.literas{
 [title]+.pawn{ 
     background-position-x:-52vmin;
 }
-div+.pawn{ 
+div+div+div+.pawn{ 
     background-position-y: -10vmin;
     background-position-x: -52vmin;
 }
