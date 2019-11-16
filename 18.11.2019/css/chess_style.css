@@ -1,18 +1,19 @@
 body{
     margin: 0;
+    width: 100vw;
 }
-.chessboard{
-    width: 100vmin;
-    height: 100vmin;
-} 
+.chessboard{ 
+    width: 80vw;
+    height: 80vw;
+}  
 .chessboard>div{ 
-    height: 10vmin;
+    height: 10%;
 }
 .chessboard>div>div{
     float: left;
-    width: 10vmin;
-    height: 10vmin;
-    line-height: 10vmin;
+    width: 10%;
+    height: 100%;
+    /*line-height: 10vw;  */
     text-align: center;
 }
 .odd{
@@ -21,17 +22,24 @@ body{
         green 10.1%, green 20%, white 20.1%,white 30%,
         green 30.1%, green 40%, white 40.1%,white 50%,
         green 50.1%, green 60%, white 60.1%,white 70%,
-        green 70.1%, green 80%, white 80.1%
+        green 70.1%, green 80%, white 80.1%, white 90%,
+        green 90.1%, green 90.2%, white 90.3%
         );
 }
 .even{
-    background: linear-gradient(to left,
+    background: linear-gradient(to left, 
         white 0%,white 10%,
         green 10.1%, green 20%, white 20.1%,white 30%,
         green 30.1%, green 40%, white 40.1%,white 50%,
         green 50.1%, green 60%, white 60.1%,white 70%,
-        green 70.1%, green 80%, white 80.1%
+        green 70.1%, green 80%, white 80.1%, white 90%,
+        green 90.1%, green 90.2%, white 90.3%
         );
+}
+
+/*Рамка внизу и вверху*/
+.literas+.odd>[title],.even+.odd+.even>[title] {
+    outline: 1px solid green;
 }
 /*рамка
 .numbers~div{
@@ -47,44 +55,44 @@ div+.numbers{
     background-repeat: no-repeat;
 }
 .odd>[title="castle"]{
-    background-position-x: -20vmin;
+    background-position-x: 40%;
 }
 .even>[title="castle"]{
-    background-position-y: -10vmin;
-    background-position-x:-20vmin;
+    background-position-y: 100%;
+    background-position-x: 40%;
 }
 .odd>[title="horse"]{
-    background-position-x:-41vmin;
+    background-position-x: 82%;
 }
 .even>[title="horse"]{
-    background-position-y: -10vmin;
-    background-position-x: -41vmin;
+    background-position-y: 100%;
+    background-position-x: 82%;
 }
 .odd>[title="elefant"]{
-    background-position-x:-30vmin;
+    background-position-x: 61%;
 }
 .even>[title="elefant"]{
-    background-position-y: -10vmin;
-    background-position-x: -30vmin;
+    background-position-y: 100%;
+    background-position-x: 61%;
 }
 .odd>[title="king"]{
-    background-position-x: -9.5vmin;
+    background-position-x: -2%;
 }
 .even>[title="king"]{
-    background-position-y: -10vmin;
-    background-position-x: -9.5vmin;
+    background-position-y: 100%;
+    background-position-x: -2%;
 }
 .odd>[title="queen"]{
-    background-position-x:1vmin;
+    background-position-x: 20%;
 }
 .even>[title="queen"]{
-    background-position-y: -10vmin;
-    background-position-x: 1vmin;
+    background-position-y: 100%;
+    background-position-x: 20%;
 }
 .even>[title="pawn"]{
-    background-position-x:-52vmin;
+    background-position-x: 104%;
 }
 .odd>[title="pawn"]{
-    background-position-y: -10vmin;
-    background-position-x: -52vmin;
+    background-position-y: 100%;
+    background-position-x: 104%;
 }
