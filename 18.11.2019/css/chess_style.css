@@ -1,10 +1,10 @@
 body{
     margin: 0;
-    width: 100vw;
+    width: 100vmin;
 }
 .chessboard{ 
-    width: 80vw;
-    height: 80vw;
+    width: 100vmin;
+    height: 100vmin;
 }  
 .chessboard>div{ 
     height: 10%;
@@ -13,9 +13,10 @@ body{
     float: left;
     width: 10%;
     height: 100%;
-    /*line-height: 10vw;  */
+    line-height: 10vw;  
     text-align: center;
 }
+/*
 .odd{
     background: linear-gradient(to right, 
         white 0%,white 10%,
@@ -35,19 +36,32 @@ body{
         green 70.1%, green 80%, white 80.1%, white 90%,
         green 90.1%, green 90.2%, white 90.3%
         );
+}*/
+.odd>.numbers+div, .odd>.numbers+div+div+div,
+.odd>.numbers+div+div+div+div+div,
+.odd>.numbers+div+div+div+div+div+div+div
+{
+    background-color: green;
+}
+.even>.numbers+div+div,
+.even>.numbers+div+div+div+div,
+.even>.numbers+div+div+div+div+div+div,
+.even>.numbers+div+div+div+div+div+div+div+div
+{
+    background-color: green;
 }
 
-/*Рамка внизу и вверху*/
+/*Рамка внизу и вверху (для liner-gradient)
 .literas+.odd>[title],.even+.odd+.even>[title] {
     outline: 1px solid green;
-}
-/*рамка
+}*/
+/*рамка*/
 .numbers~div{
     outline: 1px solid green;
 }
 div+.numbers{
     outline: none;
-}*/
+}
 /*Расстановка фигур*/
 [title]{
     background-image: url("../images/chess.png");
@@ -89,10 +103,9 @@ div+.numbers{
     background-position-y: 100%;
     background-position-x: 20%;
 }
-.even>[title="pawn"]{
+[title="pawn"]{
     background-position-x: 104%;
 }
 .odd>[title="pawn"]{
     background-position-y: 100%;
-    background-position-x: 104%;
 }
