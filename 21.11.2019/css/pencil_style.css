@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+body>div{ 
+    height: 60px;
+    background-image: linear-gradient(to bottom,
+        yellow 0%, yellow calc(100% / 3), 
+        orange calc(100% / 3),orange calc(100% / 3 * 2),
+        yellow calc(100% / 3 * 2),yellow 100%
+    );
+} 
+body>div>div{ 
+    height: 100%;
+    background: radial-gradient( 60px 60px at 100% 50%,black 0% ,black 40%,
+    brown 40% ,brown 100% ,transparent 100%);
+}
+div>div>div{
+    float: right;
+    border: 30px solid white;
+    border-left: 50px solid transparent;
+    border-right: 0px;
+}
+
