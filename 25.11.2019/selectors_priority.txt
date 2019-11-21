@@ -1,0 +1,35 @@
+Спец-ть  	selector
+------------------------------
+0200		#content #wrap *
+0113		#social li a[href*="facebook"]::before
+0113		body > div.star > a#new
+0111		#content .text p
+0103		#social li a::before
+0101 ?		#page header, #page article, #page footer
+0100		#t34
+0030		.call-to-action:visited:active
+0023		div.cool p.cool a
+0021		button[type="submit"].button_submit
+0021		li.red.level
+0021		li:not(.red):not(.green)
+0015		form > div > div > div > button.button_submit
+0013		div section>:nth-child(4):not(div)
+0013		div div input[type=text] 
+0012		a[href$=".pdf"]::before
+0012		ul li:nth-child(even)
+0012		ul li:last-child
+0012		ul li.red
+0011		a:active
+0011		li:not(.red)
+0011		button.button_submit
+0005		p + p + p > a::before
+0003		ul ol+li
+0003		h1 + p::first-line
+0003		p + p img
+0002		ul li
+0002		li::first-line
+0002		p + p
+0002		h1 + p 
+0001 ?		last-child
+0001		li
+0000		*
