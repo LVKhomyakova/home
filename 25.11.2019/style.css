@@ -22,6 +22,10 @@ body{
 {
     background-color: green;
 }
+/*hover*/
+.chesstable>div:nth-child(n)>div:nth-child(n):hover{
+    background-color: coral;
+}
 /*Буквы: настройка*/
 .chesstable>div:nth-child(7n+1)>div::before
 {
