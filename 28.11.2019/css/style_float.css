@@ -1,0 +1,46 @@
+body{
+    background-color: burlywood;
+}
+p{
+    text-indent: 10px;
+    margin: 0px;
+}
+section{
+    width: 350px;
+}
+div{
+    float: left;
+    margin: 3px;
+    border: 1px solid green;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    float: left;
+    clear: both;
+
+}
+img+section{
+    width: 60px;
+}
+.bord{
+    border: 1px solid red;
+}
+.imgM{
+    margin: 20px;
+}
+.pM{
+    border: 1px solid yellow;
+    margin-left: 90px;
+}
+.imgP{
+    padding: 20px;
+}
+.pP{
+    border: 1px solid yellow;
+    padding-left: 50px;
+}

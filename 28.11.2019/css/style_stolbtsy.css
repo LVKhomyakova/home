@@ -1,0 +1,43 @@
+.clear{
+    clear: both;
+}
+.left{
+    float: left;
+    width: 16%;
+}
+.center{
+    margin-left: 16%;
+    margin-right: 215px;
+}
+.right{
+    float: right;
+    width: 215px;
+}
+.main{
+    background: url("../images/soty5.jpg") 15.5% top repeat-y;
+}
+.main>div{
+    background: url("../images/soty2.jpg") right top repeat-y;
+}
+/*----------------------------------*/
+.main2{
+    background: url("../images/flower.jpg") left bottom no-repeat;
+}
+.menu_img{
+    background: url("../images/soty5.png") 15.5% top repeat-y;
+}
+.menu_img>div{
+    background: url("../images/soty2.jpg") right top repeat-y;
+}
+/*----------------------------------*/
+.left3{
+    float: left;
+    width: 30%;
+}
+.right3{
+    margin-left: 32%;
+    background: url("../images/soty4.jpg");
+}
+.main3{
+    background: url("../images/soty.jpg");
+}

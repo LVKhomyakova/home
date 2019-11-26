@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+}
+header{
+    background-color: yellow;
+    text-align: center;
+    padding: 20px;
+}
+.left{
+    float: left;
+    width: 15%;
+    height: 100px;
+    background-color: turquoise;
+}
+.center{
+    margin-left: 15%;
+    margin-right: 200px;
+    background-color: pink;
+    height: 100px;
+}
+.right{
+    float: right;
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+}
+footer{
+    clear: both;
+    height: 50px;
+    background-color: orange;
+}
+/*табличная*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.head{
+    background-color: yellow;
+    height: 100px;
+    text-align: center;
+}
+.l{
+    width: 15%;
+    height: 100px;
+    background-color: turquoise;
+}
+.c{
+    height: 100px;
+    background-color: pink;
+}
+.r{
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+}
+.foot{
+    background-color: orange;
+    height: 50px;
+}
+
