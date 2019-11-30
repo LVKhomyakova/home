@@ -39,7 +39,7 @@ section{
 #cell11:checked~.wrapper>section{
     top: -660px;
 }
-#cell12:checked~.wrapper div{
+#cell12:checked~.wrapper>section{
     top: 0px;
 }
 /*Расстановка фигур*/
