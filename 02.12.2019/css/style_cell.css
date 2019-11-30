@@ -1,0 +1,16 @@
+div{
+    width: 60px;
+    height: 60px;
+    outline: 1px solid red;
+    background-color: chocolate; 
+    background-image: url("../image/chess.png");
+    background-repeat: no-repeat;
+    background-size: 600% 200%;
+    background-position-y: 100%;
+}
+#cell{
+    display: none;
+}
+#cell:checked~div>label>div{
+    background-position-y: 0%;
+}

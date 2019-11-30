@@ -1,0 +1,82 @@
+input{
+    display: none;
+}
+section{
+    position: relative;
+}
+/*Сдвигаем лейблы для белых*/
+#cell1:checked~.wrapper>section{
+    top: -60px;
+}
+#cell2:checked~.wrapper>section{
+    top: -120px;
+}
+#cell3:checked~.wrapper>section{
+    top: -180px;
+}
+#cell4:checked~.wrapper>section{
+    top: -240px;
+}
+#cell5:checked~.wrapper>section{
+    top: -300px;
+}
+#cell6:checked~.wrapper>section{
+    top: -360px;
+}
+/*Сдвигаем лейблы для черных*/
+#cell7:checked~.wrapper>section{
+    top: -420px;
+}
+#cell8:checked~.wrapper>section{
+    top: -480px;
+}
+#cell9:checked~.wrapper>section{
+    top: -540px;
+}
+#cell10:checked~.wrapper>section{
+    top: -600px;
+}
+#cell11:checked~.wrapper>section{
+    top: -660px;
+}
+#cell12:checked~.wrapper div{
+    top: 0px;
+}
+/*Расстановка фигур*/
+.wrapper{
+    overflow: hidden;
+    position: absolute;
+    margin: 50px;
+    width: 60px;
+    height: 60px;
+    outline:1px solid blue;
+}
+label>div{
+    width: 60px;
+    height: 60px;
+    background-color: chocolate; 
+    background-image: url("../image/chess.png");
+    background-repeat: no-repeat;
+    background-size: 600% 200%;
+}
+.white div{
+    background-position-y: 100%;
+}
+.king{
+    background-position-x: -2%;
+}
+.queen{
+    background-position-x: 20%;
+}
+.castle{
+    background-position-x: 41%;
+}
+.elefant{
+    background-position-x: 62%;
+}
+.horse{
+    background-position-x: 83%;
+}
+.pawn{
+    background-position-x: 104%;
+}
