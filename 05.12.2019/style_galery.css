@@ -1,0 +1,97 @@
+#slider{
+    min-width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+}
+input{
+    display: none;
+}
+/*Next and Prev*/
+.nextSlide, .prevSlide{
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 1px;
+    top: 40%;
+}
+.prevSlide{
+    border:20px solid transparent;
+    border-right-color: coral;
+    border-left-width: 0px;
+    left: -50px;
+}
+.nextSlide{
+    border:20px solid transparent;
+    border-left-color: coral;
+    border-right-width: 0px;
+    right: -50px;
+}
+.prevSlide:hover{
+    border-right-color: brown;
+}
+.nextSlide:hover{
+    border-left-color: brown;
+}
+.prevSlide::before,
+.nextSlide::before
+{
+    display: block;
+    content: "";
+}
+/*Pins*/
+.pins{
+    width: 100%;
+    text-align:center;
+    position: absolute;
+    bottom: -40px;
+}
+.pins>label{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: coral;
+    border-radius: 50%;
+}
+/*Checked*/
+#one:checked~#slider>.slide:nth-child(1)>img,
+#two:checked~#slider>.slide:nth-child(2)>img,
+#three:checked~#slider>.slide:nth-child(3)>img,
+#four:checked~#slider>.slide:nth-child(4)>img,
+#five:checked~#slider>.slide:nth-child(5)>img
+{
+    opacity: 1;
+    max-width: 70%;
+    height: 100%;
+}
+#one:checked~#slider>.pins>label[for="one"],
+#two:checked~#slider>.pins>label[for="two"],
+#three:checked~#slider>.pins>label[for="three"],
+#four:checked~#slider>.pins>label[for="four"],
+#five:checked~#slider>.pins>label[for="five"]
+{
+    background-color: brown;
+}
+/* for animation*/
+#one:checked~#slider>.slide:nth-child(1),
+#two:checked~#slider>.slide:nth-child(2),
+#three:checked~#slider>.slide:nth-child(3),
+#four:checked~#slider>.slide:nth-child(4),
+#five:checked~#slider>.slide:nth-child(5)
+{
+    visibility: visible;
+    height: 200px;
+}
+
+.slide{
+    visibility: hidden;
+    height: 0px;
+    transition: 0s;
+}
+.slide>img{
+    opacity: 0;
+    height: 0%;
+    transition: 2s;
+}
