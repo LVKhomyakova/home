@@ -65,10 +65,13 @@ aside{
 /*--Aside menu*/
 aside>div+ul{
     list-style-type: none;
-    padding-inline-start: 14px;
+    padding-inline-start: 14px; 
 }
+
 aside>div+ul>li{
     position: relative;
+    color: blue;
+    text-decoration: underline;
 }
 label:after{
     display: inline-block;
@@ -79,7 +82,7 @@ label:after{
 }
 /*--Aside Submenu*/
 aside>div+ul>li>ul{
-    position: relative;
+    position: absolute;
     opacity: 1;
     top: -1em;
     left: 104%;
@@ -87,6 +90,10 @@ aside>div+ul>li>ul{
     padding-inline-start: 14px;
     display: none;
     background-color: chocolate;
+}
+aside>div+ul>li>ul>li{
+    list-style-type: none;
+    text-decoration: underline;
 }
 aside>div+ul>li:hover{
     background-color: chocolate;

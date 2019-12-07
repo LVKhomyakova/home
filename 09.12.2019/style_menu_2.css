@@ -1,0 +1,78 @@
+body, ul{
+    margin: 0;
+}
+body>*{
+    max-width: 480px;
+    min-width: 240px;
+}
+header{
+    position: relative;
+    background-color: coral;
+    min-height: 120px;
+    padding: 20px 0px;
+}
+header>div{
+    float: left;
+    background-color: aquamarine;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+header>ul,header>ul>li>ul{  
+    clear: both;  
+    margin-left: -20px;
+    list-style-type: none;
+}
+aside{
+    position: relative;
+    padding: 20px 0px;
+    background-color: peru;
+}
+aside>div{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 20px;
+}
+aside ul{
+    margin-left: -20px;
+}
+aside li, aside label{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    list-style: none;
+}
+input{
+    display: none;
+}
+aside>ul>li>label{
+    display: block;
+}
+aside>ul>li>label::after{
+    display: inline;
+    content: "\25bc";
+    position: absolute;
+    right: 0px;
+}
+#roga~ul, #kopyta~ul, #kozha~ul{
+    display: none;
+}
+#roga:checked~ul, 
+#kopyta:checked~ul, 
+#kozha:checked~ul{
+    display: block;
+}
+
+main{
+    min-height: 300px;
+}
+footer{
+    background-color: royalblue;
+    min-height: 120px;
+    text-align: center;
+    line-height: 120px;
+}
