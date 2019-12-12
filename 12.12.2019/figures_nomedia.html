@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        /*треугольник <400px*/
+        div::before{
+            width: 0px;
+			height: 0px;
+            display: block;
+            content: "";
+
+            border: 100px solid transparent;
+            border-top-width: 0;
+            border-bottom-width: 200px;
+            border-bottom-color: brown;
+        }
+        /*круг >800px*/
+        div{
+            overflow: hidden;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: calc((100vw - 800px) * 100);
+            top: 0;
+            left: 0;
+        }
+        /*квадрат 400-800px*/
+        div::after{
+            display: block;
+            content: "";
+			width:  200px;
+            height: calc((100vw - 400px) * 200);
+            background-color: brown;
+            position: absolute;
+            bottom: 0;
+        }
+        div, div::after, div::before{
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
