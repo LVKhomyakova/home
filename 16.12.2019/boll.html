@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        @keyframes boll{
+            0% { 
+                bottom: calc(100% - 100px);
+                box-shadow: 0 50px 100px rgba(165, 42, 42, 0.1);
+                left: 0;
+                }
+            16% {
+                bottom: 0px;
+                box-shadow: 0 0 5px rgba(165, 42, 42, 1);
+                left: calc((100vw - 100px) / 6);
+            }
+            33% { 
+                bottom: calc(100% - 100px);
+                box-shadow: 0 50px 100px rgba(165, 42, 42, 0.1);
+                left: calc((100vw - 100px) / 6 * 2);
+                }
+            49% {
+                bottom: 0px;
+                box-shadow: 0 0 5px rgba(165, 42, 42, 1);
+                left: calc((100vw - 100px) / 6 * 3);
+            }
+            66% { 
+                bottom: calc(100% - 100px);
+                box-shadow: 0 50px 100px rgba(165, 42, 42, 0.1);
+                left: calc((100vw - 100px) / 6 * 4);
+                }
+            82% {
+                bottom: 0px;
+                box-shadow: 0 0 5px rgba(165, 42, 42, 1);
+                left: calc((100vw - 100px) / 6 * 5);
+            }
+            100% {
+                bottom: calc(100% - 100px);
+                box-shadow: 0 50px 100px rgba(165, 42, 42, 0.1);
+                left: calc(100vw - 100px);
+            }
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border-radius: 50%;
+            position: absolute;
+            animation: boll 5s linear 0s infinite alternate both;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
