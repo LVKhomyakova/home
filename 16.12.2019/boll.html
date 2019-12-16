@@ -9,6 +9,39 @@
         body{
             margin: 0;
         }
+        @keyframes boll-up-down {
+            0%{
+                bottom: 0px;
+                left: 0;
+                box-shadow: 0 0 5px rgba(165, 42, 42, 1);
+            }
+           100%{
+                bottom: calc((100vh - 100px) / 3 * 2);
+                box-shadow: 0 50px 100px rgba(165, 42, 42, 0.1);
+            }
+        }
+        @keyframes boll-left-right {
+           0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(calc(100vw - 100px));
+            }
+        }
+        .up-down{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border-radius: 50%;
+            position: absolute;
+            animation: boll-up-down 1s ease-out 0s infinite alternate forwards;
+        }
+        .left-right{
+            position: absolute;
+            bottom: 0px;
+            animation: boll-left-right 10s linear 0s infinite alternate forwards;
+        }
+        /*
         @keyframes boll{
             0% { 
                 bottom: calc(100% - 100px);
@@ -45,18 +78,12 @@
                 box-shadow: 0 50px 100px rgba(165, 42, 42, 0.1);
                 left: calc(100vw - 100px);
             }
-        }
-        div{
-            width: 100px;
-            height: 100px;
-            background-color: brown;
-            border-radius: 50%;
-            position: absolute;
-            animation: boll 5s linear 0s infinite alternate both;
-        }
+        }*/
     </style>
 </head>
 <body>
-    <div></div>
+    <div class="left-right">
+        <div class="up-down"></div>
+    </div>
 </body>
 </html>
