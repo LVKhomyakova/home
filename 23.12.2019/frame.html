@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        /*верх*/
+        thead>tr>td{
+            height: 40px;
+        }
+        thead>tr>td:first-child{
+            width: 40px;
+            background-image: url(img/ugol_l.png);
+            background-size: 100% 100%;
+        }
+        thead>tr>td:nth-child(2){
+            background-image: url(img/krai_top.png);
+            background-size: 100% 100%;
+        }
+        thead>tr>td:last-child{
+            width: 40px;
+            background-image: url(img/ugol_r.png);
+            background-size: 100% 100%;
+        }
+        /*Контент*/
+        tbody>tr>td:first-child{
+            background-image: url(img/krai_left.png);
+            background-size: 100% 100%;
+
+        }
+        tbody>tr>td:nth-child(2){
+            text-align: center;
+        }
+        tbody>tr>td:last-child{
+            background-image: url(img/krai_right.png);
+            background-size: 100% 100%;
+        }
+        /*Низ*/
+        tfoot>tr>td{
+            height: 40px;
+        }
+        tfoot>tr>td:first-child{
+            background-image: url(img/ugol_r.png);
+            background-size: 100% 100%;
+            transform: rotate(180deg);
+        }
+        tfoot>tr>td:nth-child(2){
+            background-image: url(img/krai_bottom.png);
+            background-size: 100% 100%;
+        }
+        tfoot>tr>td:last-child{
+            background-image: url(img/ugol_l.png);
+            background-size: 100% 100%;
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>
+                    Ко́шка, или дома́шняя ко́шка, — домашнее животное, одно 
+                    из наиболее популярных «животных-компаньонов». С точки 
+                    зрения научной систематики, домашняя кошка — млекопитающее 
+                    семейства кошачьих отряда хищных. Ранее домашнюю кошку 
+                    нередко рассматривали как отдельный биологический вид.        
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>        
+</body>
+</html>

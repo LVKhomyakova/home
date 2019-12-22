@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pencil by table</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        tbody>tr:first-child>td:first-child{
+            width: calc(100vw - 45px);
+            height: 20px;
+        }
+        tr:nth-child(even)>td{
+            background-color: salmon;
+        }
+        tr:nth-child(3)>td{
+            background-color: brown;
+        }
+        /*острие*/
+        tr:first-child>td:last-child{
+            width: 45px;
+            height: 100px;
+            position: relative;
+        }
+        .pencil{
+            border: 38px solid transparent;
+            border-left: 60px solid tan;
+            border-right-width: 0;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 14px;
+        }
+        .pencil::after{
+            display: block;
+            content: "";
+            border: 16px solid transparent;
+            border-left: 25px solid black;
+            border-right-width: 0px;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: -16px;
+        }
+
+    </style>
+</head>
+<body>
+    <table cellspacing="0">
+        <tbody>
+            <tr>
+                <td>    
+                </td>
+                <td rowspan="5">
+                    <div class="pencil"></div>
+                </td>
+            </tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

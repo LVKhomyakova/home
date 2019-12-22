@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        table{
+            table-layout: fixed;
+            width: 100vw;
+        }
+        /*Header*/
+        th{
+            padding: 10px;
+            background-color: palevioletred;
+        }
+        .logo{
+            width: 100px;
+            height: 50px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 50px;
+        }
+        /*Меню верхнее*/
+        thead>tr:last-child>th:last-child{
+            position: relative;
+        }
+        thead>tr:last-child>th:last-child>ul{
+            display: none;
+        }
+
+        thead>tr:last-child>th:last-child::after{
+            display: inline;
+            content: "\25bc";
+            color: black;
+            position: absolute;
+            right: 0px;
+        }
+        thead>tr:last-child>th:last-child:hover>ul{
+            display: block;
+        }
+        thead>tr:last-child>th:last-child>ul{
+            background-color: tomato;
+            list-style: none;
+            width: 150px;
+            text-align: initial;
+            position: absolute;
+            top: 20px;
+            right: 0;
+            z-index: 1;
+        }
+        /*Aside*/
+        tbody>tr>td{
+            position: relative;
+        }
+        tbody>tr>td:first-child{
+            padding-left: 20px;
+            width: 250px;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+            background-color: orange;
+            position: relative;
+        }
+        tbody>tr>:last-child{
+            background-color: palegreen;
+        }
+
+        /*Боковое меню*/
+        input{
+            display: none;
+        }
+        #roga~ul, #kopyta~ul, #kozha~ul{
+            width: 150px;
+            list-style: none;
+            background-color: sandybrown;
+            text-decoration: underline;
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            top: -1em;
+            right:  -190px;
+        }
+        label{
+            cursor: pointer;
+            display: block;
+        }
+        label::after{
+            display: inline;
+            content: "\25b6";
+            color: blue;
+            position: absolute;
+            right: 0px;
+        }
+        #roga:checked~ul, 
+        #kopyta:checked~ul, 
+        #kozha:checked~ul{
+            display: block;
+        }
+        /*Footer*/
+        tfoot>tr>td{
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th colspan="4">
+                    <div class="logo">Logo</div>
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>О компании</th>
+                <th>Доставка</th>
+                <th>Вакансии
+                    <ul>
+                        <li>Заготовщик кожи</li>
+                        <li>Заготовщик рогов</li>
+                        <li>Заготовщик копыт</li>
+                    </ul>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Каталог</td>
+                <td rowspan="4" colspan="3"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="" id="roga">
+                    <label for="roga">Рога</label> 
+                    <ul>
+                        <li>Бараньи</li>
+                        <li>Оленьи</li>
+                    </ul>
+                </td>
+                    
+            </tr>
+            <tr>
+                <td>
+
+                    <input type="checkbox" name="" id="kopyta">
+                    <label for="kopyta">Копыта</label> 
+                    <ul>
+                        <li>Бараньи</li>
+                        <li>Оленьи</li>
+                        <li>Свиные</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="" id="kozha">
+                    <label for="kozha">Кожа</label> 
+                    <ul>
+                        <li>Крокодила</li>
+                        <li>Чебурашки</li>
+                        <li>Старухи шапокляк</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">2019</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
