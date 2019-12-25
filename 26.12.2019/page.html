@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Сверстать макет </title>
+	<link rel="stylesheet" href="style-page.css">
+    <!--
+    Сверстать с помощью flexbox:
+    <640 - блоки в столбик, блоки 2, 10, 11, 12 - прячем, реклама(бл.7 закрывается), меню выпадающее и fixed
+    640...1024 - как на макете
+    1024...1200 - блоки 4 и 7 становятся горизонтально
+    > 1200 - максимальная ширина 1200px и центрирование по горизонтали
+    -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="block">1</div>
+			<div class="block">2</div>
+			<div class="block">3</div>
+		</header>
+		<hr>
+		<main>
+			<aside>
+				<div class="block">4
+					<input type="checkbox" id="menu">
+					<label for="menu">Меню</label>
+					<ul class="menu">
+						<li>item1</li>
+						<li>item2</li>
+						<li>item3</li>
+						<li>item4</li>
+						<li>item5</li>
+						<li>item6</li>
+					</ul>
+				</div>
+				<div class="block">7<p>text</p></div>
+			</aside>
+			<article>
+				<div class="block lightgrey">5</div>
+				<ul>
+					<li>6</li>
+					<li>6</li>
+					<li>6<p>text</p></li>
+					<li>6</li>
+					<li>6</li>
+					<li>6</li>
+					<li>6</li>
+				</ul>
+				<div class="block lightgrey">8<p>text</p></div>
+				<div class="block lightgrey">9<p>text</p></div>
+			</article>
+			<hr>
+		</main>
+		<footer>
+			<div class="block">10</div>
+			<div class="block">11</div>
+			<div class="block">12</div>
+			<div class="block">13</div>
+		</footer>
+	</div>
+</body>
+
+</html>
