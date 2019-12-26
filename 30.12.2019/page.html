@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Сверстать макет </title>
+	<link rel="stylesheet" href="style-page.css">
+    <!--
+    Сверстать с помощью flexbox:
+    <640 - блоки в столбик, блоки 2, 10, 11, 12 - прячем, реклама(бл.7 закрывается), меню выпадающее и fixed
+    640...1024 - как на макете
+    1024...1200 - блоки 4 и 7 становятся горизонтально
+    > 1200 - максимальная ширина 1200px и центрирование по горизонтали
+    -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="wrapper__header">
+			<div class="wrapper-header__item wrapper-header__item_left">1</div>
+			<div class="wrapper-header__item wrapper-header__item_center">2</div>
+			<div class="wrapper-header__item wrapper-header__item_right">3</div>
+		</header>
+		<hr class="wrapper__hr">
+		<content class="wrapper__content">
+			<aside class="wrapper-content__item wrapper-content__item_aside">
+				<div class="content-aside-item content-aside-item_menu">4
+					<input class="content-aside-item-menu__switch" type="checkbox" id="aside-menu">
+					<label class="content-aside-item-menu__label" for="aside-menu">Меню</label>
+					<ul class="content-aside-item-menu__list">
+						<li class="content-aside-item-menu-list__item">item1</li>
+						<li class="content-aside-item-menu-list__item">item2</li>
+						<li class="content-aside-item-menu-list__item">item3</li>
+						<li class="content-aside-item-menu-list__item">item4</li>
+						<li class="content-aside-item-menu-list__item">item5</li>
+						<li class="content-aside-item-menu-list__item">item6</li>
+					</ul>
+				</div>
+				<div class="content-aside-item content-aside-item_reklama">7<p>text</p></div>
+			</aside>
+			<article class="wrapper-content__item wrapper-content__item_article">
+				<div class="content-article-item">5</div>
+				<ul class="content-article-item content-article-item_list">
+					<li class="content-article-item-list__item">6</li>
+					<li class="content-article-item-list__item">6</li>
+					<li class="content-article-item-list__item">6<p>text</p></li>
+					<li class="content-article-item-list__item">6</li>
+					<li class="content-article-item-list__item">6</li>
+					<li class="content-article-item-list__item">6</li>
+					<li class="content-article-item-list__item">6</li>
+				</ul>
+				<div class="content-article-item content-article-item_bottom">8<p>text</p></div>
+				<div class="content-article-item content-article-item_bottom">9<p>text</p></div>
+			</article>
+			<hr class="wrapper-content__item wrapper-content__item_hr">
+		</content>
+		<footer class="wrapper__footer">
+			<div class="wrapper-footer__item wrapper-footer__item_hidden">10</div>
+			<div class="wrapper-footer__item wrapper-footer__item_hidden">11</div>
+			<div class="wrapper-footer__item wrapper-footer__item_hidden wrapper-footer__item_small ">12</div>
+			<div class="wrapper-footer__item wrapper-footer__item_small wrapper-footer__item_small_bottom">13</div>
+		</footer>
+	</div>
+</body>
+
+</html>

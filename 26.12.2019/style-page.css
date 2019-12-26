@@ -33,7 +33,7 @@ header{
     display: flex;
     min-height: 15vh;
 }
- header>:nth-child(1){
+header>:nth-child(1){
     flex-grow: 1;
 }
 header>:nth-child(2){
