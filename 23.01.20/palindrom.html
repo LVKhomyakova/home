@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var inputString = prompt('Введите строку:');
+        alert(IsPalindrom(inputString));
+
+        function IsPalindrom(str)
+        {
+            cleanStr = str.split(/[^A-Za-z0-9_А-Яа-я]*/).join('');
+            revStr = str.split(/[^A-Za-z0-9_А-Яа-я]*/).reverse().join('');
+
+            console.log(cleanStr);
+            console.log(revStr);
+            
+            if(cleanStr === revStr)
+                return `Палиндром:\n ${cleanStr}   =   ${revStr}`;
+            else
+                return `Не палиндром:\n ${cleanStr}   !=   ${revStr}`;
+        }
+
+    </script>
+</body>
+</html>
