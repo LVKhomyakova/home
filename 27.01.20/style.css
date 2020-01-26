@@ -1,0 +1,44 @@
+body{
+    margin:0;
+}
+.container{
+    color: white;
+}
+hr{
+    width: calc(100% - 6px);
+    margin: 8px auto;
+}
+ 
+/* HEADER */
+.header-block{
+    height: calc(15vh - 17px);
+    border: 3px solid  white;
+    background-color: gray;
+}
+
+/* MAIN */
+.main>.row{
+    height: 600px;
+}
+.sidebar-block{
+    border: 3px solid  white;
+    background-color: gray;
+}
+.main-block{
+    border: 3px solid  white;
+    background-color: lightgray;
+}
+
+/* FOOTER */
+.footer-block{
+    height: calc(20vh - 17px);
+    border: 3px solid  white;
+    background-color: gray;
+}
+.footer-block-bottom{
+    border-top: 3px solid  white;
+}
+.footer-block-top{
+    border-bottom: 3px solid  white;
+}
+
